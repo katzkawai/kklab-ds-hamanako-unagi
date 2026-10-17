@@ -1880,6 +1880,7 @@ section[id] {
 
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -1888,6 +1889,17 @@ section[id] {
   font-size: 0.66rem;
   letter-spacing: 0.08em;
   color: rgba(246, 240, 227, 0.35);
+}
+
+.footer-credit {
+  font-family: var(--latin);
+  font-size: 0.74rem;
+  letter-spacing: 0.07em;
+  color: rgba(246, 240, 227, 0.62);
+}
+
+.footer-credit span {
+  color: var(--gold-light);
 }
 
 .footer-facts {
