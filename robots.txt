@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://katzkawai.org/kklab-ds-hamanako-unagi/sitemap.xml
