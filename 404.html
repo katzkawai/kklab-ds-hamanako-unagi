@@ -3,61 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ページが見つかりません｜浜名湖うなぎ</title>
+  <title>ページが見つかりません | 浜名湖うなぎ</title>
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#0d1b21">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0f252b">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&amp;family=Shippori+Mincho:wght@400;500;600&amp;family=Zen+Kaku+Gothic+New:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .error-page {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      position: relative;
       min-height: 100svh;
-      padding: 120px 24px 80px;
-      text-align: center;
-      background:
-        radial-gradient(circle at 50% 30%, rgba(70, 102, 109, 0.28), transparent 48%),
-        var(--ink);
+      display: grid;
+      place-items: center;
+      padding: 7rem 1.5rem 5rem;
+      overflow: hidden;
       color: var(--paper);
+      background:
+        radial-gradient(circle at 74% 26%, rgba(61, 106, 102, 0.5) 0%, rgba(15, 37, 43, 0) 58%),
+        linear-gradient(155deg, #16343a 0%, #10282e 46%, #0a1d22 100%);
     }
-    .error-page .eyebrow { color: var(--gold); margin-bottom: 18px; }
-    .error-page .error-code {
-      font-family: var(--font-serif);
-      font-size: clamp(4.6rem, 16vw, 9rem);
-      line-height: 1;
-      letter-spacing: 0.08em;
-      color: rgba(200, 162, 92, 0.22);
-      -webkit-text-stroke: 1px rgba(200, 162, 92, 0.55);
+
+    .error-page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.12;
+      background-image: radial-gradient(circle at 50% 0, transparent 0 22px, rgba(217, 180, 119, 0.5) 22px 23px, transparent 23px 44px);
+      background-size: 88px 44px;
+      pointer-events: none;
     }
-    .error-page h1 {
-      margin-top: 20px;
-      font-family: var(--font-serif);
-      font-size: clamp(1.35rem, 3vw, 2rem);
+
+    .error-brand {
+      position: absolute;
+      top: 1.4rem;
+      left: clamp(1.2rem, 5vw, 3rem);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      z-index: 2;
+    }
+
+    .error-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+      text-align: center;
+    }
+
+    .error-eyebrow {
+      font-family: var(--latin);
+      font-size: 0.66rem;
+      letter-spacing: 0.32em;
+      color: var(--gold-light);
+    }
+
+    .error-code {
+      margin-top: 0.6rem;
+      font-family: var(--latin);
+      font-size: clamp(7rem, 22vw, 13rem);
+      line-height: 0.9;
+      letter-spacing: 0.06em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(217, 180, 119, 0.6);
+    }
+
+    .error-title {
+      margin-top: 1.2rem;
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
       font-weight: 500;
       letter-spacing: 0.1em;
     }
-    .error-page p {
-      max-width: 34em;
-      margin-top: 16px;
+
+    .error-text {
+      margin-top: 1.1rem;
       font-size: 0.86rem;
-      line-height: 2;
-      color: rgba(247, 243, 234, 0.62);
+      line-height: 2.1;
+      color: rgba(246, 240, 227, 0.62);
     }
-    .error-page .btn { margin-top: 32px; }
+
+    .error-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .error-seal {
+      margin-top: 2.4rem;
+      display: inline-block;
+      padding: 0.65rem 0.5rem;
+      background: var(--vermilion);
+      color: #fbf2e0;
+      font-family: var(--serif);
+      font-size: 0.82rem;
+      line-height: 1.1;
+      letter-spacing: 0.16em;
+      writing-mode: vertical-rl;
+      transform: rotate(-3deg);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
+    }
+
+    @media (max-width: 640px) {
+      .error-brand .brand-en {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
   <main class="error-page">
-    <p class="eyebrow"><span class="num">404</span>NOT FOUND</p>
-    <p class="error-code" aria-hidden="true">404</p>
-    <h1>ページが見つかりません。</h1>
-    <p>お探しのページは、移動または削除された可能性があります。<br>浜名湖うなぎの物語へ、トップページからお戻りください。</p>
-    <a class="btn btn-gold" href="./">トップページへ<span aria-hidden="true">→</span></a>
+    <a class="error-brand brand" href="index.html" aria-label="浜名湖うなぎ トップへ">
+      <span class="brand-mark" aria-hidden="true">鰻</span>
+      <span class="brand-text">
+        <span class="brand-jp">浜名湖うなぎ</span>
+        <span class="brand-en">HAMANAKO UNAGI</span>
+      </span>
+    </a>
+
+    <div class="error-inner">
+      <p class="error-eyebrow">PAGE NOT FOUND</p>
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1 class="error-title">ページが見つかりません。</h1>
+      <p class="error-text">お探しのページは、移動または削除された可能性があります。<br>URLをご確認のうえ、トップページからお進みください。</p>
+      <div class="error-actions">
+        <a class="btn btn--gold" href="index.html">
+          トップページへ
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <span class="error-seal" aria-hidden="true">浜名湖</span>
+    </div>
   </main>
 </body>
 </html>

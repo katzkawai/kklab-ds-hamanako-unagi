@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="6" fill="#a83b30"/>
+  <rect x="4" y="4" width="56" height="56" rx="3" fill="none" stroke="#f6f0e3" stroke-opacity=".35"/>
+  <text x="32" y="45" text-anchor="middle" font-family="'Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif" font-size="38" fill="#f6f0e3">鰻</text>
+</svg>

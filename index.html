@@ -2,545 +2,996 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <script>document.documentElement.classList.add("js");</script>
+  <script>
+    document.documentElement.classList.add("js");
+    setTimeout(function () {
+      if (!window.__revealReady) document.documentElement.classList.remove("js");
+    }, 3000);
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>浜名湖うなぎ｜汽水の湖が育む、百年の旨み</title>
-  <meta name="description" content="静岡県・浜名湖のうなぎを紹介するサイト。海と湖が出会う汽水湖の恵み、1879年から続く養殖の歴史、職人の手仕事、蒲焼き・白焼きの味わい方、浜名湖周辺の楽しみ方をご案内します。">
-  <meta name="author" content="浜名湖うなぎ紹介サイト">
-  <meta name="theme-color" content="#0d1b21">
-  <link rel="canonical" href="https://katzkawai.org/kklab-ds-hamanako-unagi/">
-
-  <!-- OGP / Twitter -->
+  <title>浜名湖うなぎ | 汽水の湖が育てた、百年余りのおいしさ</title>
+  <meta name="description" content="静岡県浜松市・湖西市に広がる汽水湖、浜名湖。明治から続くうなぎ養殖の歴史と、豊かな水がはぐくむ浜名湖うなぎの魅力、蒲焼きの味わい方、周辺の旅を紹介します。">
+  <meta name="theme-color" content="#0f252b">
+  <meta property="og:title" content="浜名湖うなぎ | 汽水の湖が育てた、百年余りのおいしさ">
+  <meta property="og:description" content="海と湖が出会う場所で育まれた、静岡・浜名湖のうなぎ。その歴史、おいしさの理由、味わい方と旅を紹介します。">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="浜名湖うなぎ">
-  <meta property="og:title" content="浜名湖うなぎ｜汽水の湖が育む、百年の旨み">
-  <meta property="og:description" content="海と湖が出会う汽水湖・浜名湖。1879年から続く養殖の歴史と、職人の手仕事が育てるうなぎの物語。">
-  <meta property="og:url" content="https://katzkawai.org/kklab-ds-hamanako-unagi/">
-  <meta property="og:image" content="https://katzkawai.org/kklab-ds-hamanako-unagi/assets/ogp.png">
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://katzkawai.org/kklab-ds-hamanako-unagi/assets/img/ogp.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="浜名湖うなぎ — 汽水の湖が育む、百年つづく旨み">
-  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image:alt" content="浜名湖うなぎのタイトルと、湖を泳ぐうなぎのイラスト">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="浜名湖うなぎ｜汽水の湖が育む、百年の旨み">
-  <meta name="twitter:description" content="海と湖が出会う汽水湖・浜名湖。1879年から続く養殖の歴史と、職人の手仕事が育てるうなぎの物語。">
-  <meta name="twitter:image" content="https://katzkawai.org/kklab-ds-hamanako-unagi/assets/ogp.png">
-  <meta name="twitter:image:alt" content="浜名湖うなぎ — 汽水の湖が育む、百年つづく旨み">
-
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="twitter:image" content="https://katzkawai.org/kklab-ds-hamanako-unagi/assets/img/ogp.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
-  <noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Shippori+Mincho:wght@400;500;600;700&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "浜名湖うなぎ",
-    "alternateName": "Hamanako Unagi",
-    "url": "https://katzkawai.org/kklab-ds-hamanako-unagi/",
-    "description": "静岡県・浜名湖のうなぎと食文化を紹介する非公式サイト。",
-    "inLanguage": "ja",
-    "about": {
-      "@type": "Place",
-      "name": "浜名湖",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "静岡県",
-        "addressLocality": "浜松市・湖西市"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "浜名湖うなぎ",
+        "url": "https://katzkawai.org/kklab-ds-hamanako-unagi/",
+        "description": "静岡県・浜名湖のうなぎと食文化を紹介する情報サイト。汽水湖の環境、養鰻の歴史、蒲焼きの味わい方、周辺の旅を紹介します。",
+        "inLanguage": "ja"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "なぜ浜名湖でうなぎ養殖が盛んなのですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "浜名湖は海水と淡水が混ざる汽水湖で、うなぎが育つための豊かな環境があります。また、温暖な気候と豊富な地下水に恵まれ、明治時代から養鰻が続いてきたことも大きな理由です。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "旬の時期はいつですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "養殖のうなぎは一年を通して出回るため、いつでも味わえます。脂がのる秋冬もおいしい季節です。土用の丑の日は、特に多くの人でにぎわいます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "関東風と関西風の違いは何ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "関東風は背開きにして白焼きしたあと蒸し、タレ焼きにします。関西風は腹開きで、蒸さずに焼き上げるのが一般的です。静岡は両者が交わる地域で、浜松では関東風の蒲焼きが親しまれています。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "浜名湖観光と一緒に楽しめますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい。舘山寺温泉や弁天島、浜松城など、うなぎとあわせて訪れたい場所がたくさんあります。湖を一周するドライブや、浜名湖の夕景を楽しむのもおすすめです。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "自宅でもおいしく食べるには？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "蒲焼きは蒸し器で軽く温めると、ふっくらとした食感が戻ります。フライパンを使う場合は、酒を少量加えて蓋をし、弱火で蒸し焼きにするのがおすすめです。最後にタレをさっと煮からめると香りが立ちます。"
+            }
+          }
+        ]
       }
-    }
+    ]
   }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">本文へスキップ</a>
-  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-  <header class="site-header" id="header">
-    <a class="brand" href="#top" aria-label="浜名湖うなぎ トップへ">
-      <span class="brand-mark" aria-hidden="true">鰻</span>
-      <span class="brand-text">浜名湖うなぎ<small>HAMANAKO UNAGI</small></span>
-    </a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="浜名湖うなぎ トップへ">
+        <span class="brand-mark" aria-hidden="true">鰻</span>
+        <span class="brand-text">
+          <span class="brand-jp">浜名湖うなぎ</span>
+          <span class="brand-en">HAMANAKO UNAGI</span>
+        </span>
+      </a>
 
-    <nav class="nav" id="nav" aria-label="メインメニュー">
-      <a href="#about">浜名湖と鰻</a>
-      <a href="#history">歴史</a>
-      <a href="#craft">できるまで</a>
-      <a href="#taste">味わい方</a>
-      <a href="#area">浜名湖へ</a>
-      <a href="#faq">よくある質問</a>
-    </nav>
+      <nav class="nav" id="site-nav" aria-label="メインナビゲーション">
+        <a class="nav-link" href="#about">浜名湖うなぎとは</a>
+        <a class="nav-link" href="#why">おいしさの理由</a>
+        <a class="nav-link" href="#history">歴史</a>
+        <a class="nav-link" href="#taste">味わい方</a>
+        <a class="nav-link" href="#area">浜名湖を旅する</a>
+      </nav>
 
-    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="メニューを開く">
-      <span></span><span></span>
-    </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">メニュー</span>
+        <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
   </header>
 
   <main id="main">
-    <!-- ============ HERO ============ -->
+    <!-- Hero -->
     <section class="hero" id="top">
-      <div class="hero-glow" aria-hidden="true"></div>
+      <svg class="hero-pattern" aria-hidden="true" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1440 900">
+        <defs>
+          <pattern id="seigaiha" width="96" height="48" patternUnits="userSpaceOnUse">
+            <g fill="none" stroke="#d9b477" stroke-width="1">
+              <circle cx="0" cy="48" r="46" opacity=".5"/>
+              <circle cx="0" cy="48" r="34" opacity=".5"/>
+              <circle cx="0" cy="48" r="22" opacity=".5"/>
+              <circle cx="0" cy="48" r="10" opacity=".5"/>
+              <circle cx="48" cy="48" r="46" opacity=".5"/>
+              <circle cx="48" cy="48" r="34" opacity=".5"/>
+              <circle cx="48" cy="48" r="22" opacity=".5"/>
+              <circle cx="48" cy="48" r="10" opacity=".5"/>
+              <circle cx="96" cy="48" r="46" opacity=".5"/>
+              <circle cx="96" cy="48" r="34" opacity=".5"/>
+              <circle cx="96" cy="48" r="22" opacity=".5"/>
+              <circle cx="96" cy="48" r="10" opacity=".5"/>
+              <circle cx="24" cy="0" r="46" opacity=".5"/>
+              <circle cx="24" cy="0" r="34" opacity=".5"/>
+              <circle cx="24" cy="0" r="22" opacity=".5"/>
+              <circle cx="24" cy="0" r="10" opacity=".5"/>
+              <circle cx="72" cy="0" r="46" opacity=".5"/>
+              <circle cx="72" cy="0" r="34" opacity=".5"/>
+              <circle cx="72" cy="0" r="22" opacity=".5"/>
+              <circle cx="72" cy="0" r="10" opacity=".5"/>
+            </g>
+          </pattern>
+          <radialGradient id="hero-glow" cx="72%" cy="34%" r="62%">
+            <stop offset="0%" stop-color="#3c6a67" stop-opacity=".55"/>
+            <stop offset="55%" stop-color="#1b3a40" stop-opacity=".18"/>
+            <stop offset="100%" stop-color="#0f252b" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1440" height="900" fill="url(#seigaiha)" opacity=".13"/>
+        <rect width="1440" height="900" fill="url(#hero-glow)"/>
+      </svg>
 
-      <div class="hero-inner container">
+      <div class="hero-inner">
         <div class="hero-copy">
-          <p class="hero-kicker"><span class="rule" aria-hidden="true"></span>SHIZUOKA&nbsp;/&nbsp;LAKE&nbsp;HAMANA</p>
-          <h1 class="hero-title">
-            <span class="hero-kanji">浜名湖</span>
-            <span class="hero-unagi">うなぎ<span class="hero-dot">。</span></span>
-          </h1>
-          <p class="hero-lead">汽水の湖が育む、<br>百年つづく旨み。</p>
-          <p class="hero-desc">
-            海と湖が混ざり合う浜名湖。明治12年に始まった養殖の歴史と、
-            職人の手仕事が、今日も変わらない味を運んでいます。
+          <p class="eyebrow" data-reveal>
+            <span>SHIZUOKA</span><span class="eyebrow-dot" aria-hidden="true"></span><span>LAKE HAMANA</span>
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-gold" href="#about">物語を読む<span aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost" href="#area">浜名湖へ行く</a>
+          <h1 data-reveal style="--delay:.08s">
+            <span class="h1-line">浜名湖</span>
+            <span class="h1-line h1-line--accent">うなぎ<span class="h1-period">。</span></span>
+          </h1>
+          <p class="hero-lead" data-reveal style="--delay:.16s">汽水の湖が育てた、<br>百年余りのおいしさ。</p>
+          <p class="hero-desc" data-reveal style="--delay:.24s">
+            静岡県浜松市・湖西市に広がる浜名湖。海と湖が出会う豊かな水と、温暖な気候が、香ばしく、ふっくらとしたうなぎを育ててきました。
+          </p>
+          <div class="hero-actions" data-reveal style="--delay:.32s">
+            <a class="btn btn--gold" href="#about">
+              その魅力を知る
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#taste">味わい方を見る</a>
           </div>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
-          <div class="hero-ring hero-ring--1"></div>
-          <div class="hero-ring hero-ring--2"></div>
-          <div class="hero-ring hero-ring--3"></div>
+        <div class="hero-art" data-reveal style="--delay:.2s">
+          <div class="emblem">
+            <svg class="emblem-ring" viewBox="0 0 480 480" aria-hidden="true">
+              <defs>
+                <path id="ring-path" d="M240,240 m-190,0 a190,190 0 1,1 380,0 a190,190 0 1,1 -380,0"/>
+              </defs>
+              <text>
+                <textPath href="#ring-path" startOffset="0">LAKE HAMANA · SHIZUOKA · JAPAN · HAMANAKO UNAGI · </textPath>
+              </text>
+            </svg>
 
-          <svg class="hero-eel" viewBox="0 0 600 600" fill="none" role="presentation">
-            <defs>
-              <linearGradient id="eelGrad" x1="120" y1="500" x2="500" y2="120" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#8d6a35"/>
-                <stop offset=".45" stop-color="#c8a25c"/>
-                <stop offset="1" stop-color="#f0d9a8"/>
-              </linearGradient>
-              <linearGradient id="eelBelly" x1="160" y1="520" x2="460" y2="160" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#fff8e8" stop-opacity=".85"/>
-                <stop offset="1" stop-color="#f0d9a8" stop-opacity=".1"/>
-              </linearGradient>
-            </defs>
-            <path class="eel-shadow" d="M300 500C430 500 510 414 510 306C510 198 430 124 320 124C214 124 142 196 142 292C142 372 204 424 278 424C344 424 386 382 386 328C386 282 352 250 308 250" stroke="#c8a25c" stroke-width="34" stroke-linecap="round" opacity=".12"/>
-            <path class="eel-body" pathLength="1" d="M300 500C430 500 510 414 510 306C510 198 430 124 320 124C214 124 142 196 142 292C142 372 204 424 278 424C344 424 386 382 386 328C386 282 352 250 308 250" stroke="url(#eelGrad)" stroke-width="27" stroke-linecap="round"/>
-            <path class="eel-belly" pathLength="1" d="M300 500C430 500 510 414 510 306C510 198 430 124 320 124C214 124 142 196 142 292C142 372 204 424 278 424C344 424 386 382 386 328C386 282 352 250 308 250" stroke="url(#eelBelly)" stroke-width="6" stroke-linecap="round" opacity=".7"/>
-            <g class="eel-head">
-              <circle cx="306" cy="248" r="18" fill="#e0bd7c"/>
-              <circle cx="312" cy="244" r="4.2" fill="#0d1b21"/>
-              <circle cx="313.6" cy="242.4" r="1.4" fill="#fff8e8"/>
-              <path d="M292 260C280 270 276 282 280 294" stroke="#c8a25c" stroke-width="3.2" stroke-linecap="round" opacity=".75"/>
-              <path d="M322 262C332 272 335 284 331 295" stroke="#c8a25c" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>
-            </g>
-          </svg>
+            <svg class="emblem-eel" viewBox="0 0 480 480" aria-hidden="true">
+              <defs>
+                <linearGradient id="eel-body" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#3d6260"/>
+                  <stop offset=".45" stop-color="#1b3a40"/>
+                  <stop offset="1" stop-color="#0b1c21"/>
+                </linearGradient>
+                <linearGradient id="eel-gold" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0" stop-color="#c08a3e" stop-opacity=".15"/>
+                  <stop offset="1" stop-color="#e0b76c" stop-opacity=".95"/>
+                </linearGradient>
+                <filter id="eel-soft" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#051317" flood-opacity=".45"/>
+                </filter>
+              </defs>
 
-          <svg class="hero-circle-text" viewBox="0 0 300 300" aria-hidden="true">
-            <defs>
-              <path id="circlePath" d="M150,150 m-122,0 a122,122 0 1,1 244,0 a122,122 0 1,1 -244,0"/>
-            </defs>
-            <text>
-              <textPath href="#circlePath" startOffset="0">LAKE HAMANA · SHIZUOKA · JAPAN · 汽水の湖 ·</textPath>
-            </text>
-          </svg>
+              <circle cx="240" cy="240" r="168" fill="#f3e9d5" opacity=".07"/>
+              <circle cx="240" cy="240" r="168" fill="none" stroke="#d9b477" stroke-opacity=".35"/>
+              <circle cx="240" cy="240" r="152" fill="none" stroke="#d9b477" stroke-opacity=".12"/>
 
-          <span class="hero-stamp">浜名湖</span>
-          <span class="hero-art-label">EST.&nbsp;1879</span>
+              <g filter="url(#eel-soft)">
+                <path d="M106 302 C118 346 178 362 218 332 C258 302 252 254 286 224 C310 202 342 204 364 226"
+                      fill="none" stroke="url(#eel-body)" stroke-width="46" stroke-linecap="round"/>
+                <path d="M360 220 C382 204 402 202 420 212 C402 224 390 242 384 262 C370 248 364 234 360 220 Z"
+                      fill="url(#eel-body)" opacity=".9"/>
+                <path d="M116 283 C136 320 176 338 210 318 C246 297 246 251 282 222 C306 203 334 203 356 216"
+                      fill="none" stroke="url(#eel-gold)" stroke-width="2.2" stroke-linecap="round" opacity=".75"/>
+                <path d="M137 318 C150 330 164 337 178 340 C168 326 157 314 146 306 Z"
+                      fill="#c08a3e" opacity=".7"/>
+                <path d="M92 307 C97 315 104 320 112 322" fill="none" stroke="#f3e9d5" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+                <circle cx="121" cy="291" r="6.5" fill="#f3e9d5"/>
+                <circle cx="122.5" cy="291" r="3" fill="#0b1c21"/>
+              </g>
+
+              <g fill="none" stroke="#d9b477" stroke-linecap="round" opacity=".45">
+                <path d="M96 359 C116 355 132 359 146 369" stroke-width="1.5"/>
+                <path d="M88 374 C112 369 132 373 150 384" stroke-width="1"/>
+                <path d="M384 330 C397 326 408 327 418 333" stroke-width="1"/>
+              </g>
+            </svg>
+
+            <span class="emblem-seal" aria-hidden="true">浜名湖</span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-scroll" aria-hidden="true">
-        <span>SCROLL</span><i></i>
+      <div class="hero-foot">
+        <ul class="hero-facts" data-reveal style="--delay:.4s">
+          <li><span class="fact-k">汽水湖</span><span class="fact-v">海と湖が出会う</span></li>
+          <li><span class="fact-k">養鰻</span><span class="fact-v">明治から続く</span></li>
+          <li><span class="fact-k">浜松・湖西</span><span class="fact-v">静岡県</span></li>
+        </ul>
+        <a class="scroll-cue" href="#about" aria-label="下へスクロール">
+          <span>SCROLL</span><span class="scroll-line" aria-hidden="true"></span>
+        </a>
       </div>
 
-      <div class="hero-wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
-          <path d="M0,96 C240,150 420,40 720,78 C1020,116 1200,150 1440,86 L1440,160 L0,160 Z" fill="#f7f3ea"/>
-          <path d="M0,118 C260,160 460,72 760,104 C1060,136 1220,160 1440,112 L1440,160 L0,160 Z" fill="#efe8d8" opacity=".55"/>
+      <div class="hero-waves" aria-hidden="true">
+        <svg viewBox="0 0 1600 240" preserveAspectRatio="none">
+          <path class="wave wave--back" d="M0,150 C120,110 240,110 360,150 C480,190 600,190 720,150 C840,110 960,110 1080,150 C1200,190 1320,190 1440,150 C1520,124 1570,124 1600,136 L1600,240 L0,240 Z"/>
+          <path class="wave wave--mid" d="M0,178 C140,140 280,140 420,178 C560,216 700,216 840,178 C980,140 1120,140 1260,178 C1400,216 1540,216 1600,192 L1600,240 L0,240 Z"/>
+          <path class="wave wave--front" d="M0,204 C160,176 320,176 480,204 C640,232 800,232 960,204 C1120,176 1280,176 1440,204 C1500,214 1560,214 1600,208 L1600,240 L0,240 Z"/>
         </svg>
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="section about" id="about">
+    <!-- About -->
+    <section class="section section--paper" id="about">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow reveal"><span class="num">01</span>ABOUT</p>
-          <h2 class="reveal" style="--d:.05s">湖と海が出会う場所で、<br>うなぎは育つ。</h2>
+        <div class="section-head" data-reveal>
+          <div class="section-meta">
+            <span class="section-num">01</span>
+            <span class="section-label">ABOUT</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title">湖と海が出会う場所で、<br>うなぎは育つ。</h2>
+            <p class="section-lead">浜名湖は、太平洋とつながる汽水湖。海水と淡水が混ざり合う独特の環境が、うなぎにとって豊かな生育の場をつくっています。</p>
+          </div>
         </div>
 
         <div class="about-grid">
-          <div class="about-copy">
-            <p class="reveal">
-              静岡県の西部、浜松市と湖西市にまたがる浜名湖。太平洋と「今切口」でつながるこの湖は、
-              海水と淡水が入り混じる<strong>汽水湖</strong>です。潮の満ち引きに合わせて水が行き交い、
-              プランクトンが豊かに育つ。うなぎにとって、これ以上ないほど恵まれた住処がここにあります。
-            </p>
-            <p class="reveal" style="--d:.08s">
-              浜名湖でのうなぎ養殖は、1879年（明治12年）にまでさかのぼります。舞阪の漁師たちが、
-              天然のうなぎを捕まえて池で育てたのがはじまりと伝えられ、日本における養殖うなぎの発祥の地とも
-              呼ばれています。以来一世紀半、湖と人々の暮らしはともに歩んできました。
-            </p>
-            <p class="reveal" style="--d:.16s">
-              現在、浜名湖周辺は全国有数のうなぎ養殖地。温暖な気候と豊かな水、そして代々受け継がれてきた
-              養殖と焼きの技術が、身の厚い、脂ののったうなぎを育てています。
-            </p>
-            <blockquote class="about-quote reveal" style="--d:.24s">
-              <p>湖が育て、職人が仕上げる。<br>浜名湖うなぎは、土地の記憶そのものです。</p>
-            </blockquote>
-          </div>
+          <figure class="about-art" data-reveal>
+            <div class="art-frame">
+              <svg viewBox="0 0 600 750" role="img" aria-label="夕暮れの浜名湖と、水面を泳ぐうなぎのイラスト">
+                <defs>
+                  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#f0e2c6"/>
+                    <stop offset=".7" stop-color="#dfc9a2"/>
+                    <stop offset="1" stop-color="#cdb286"/>
+                  </linearGradient>
+                  <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#2c5052"/>
+                    <stop offset=".55" stop-color="#1a3a3f"/>
+                    <stop offset="1" stop-color="#102a30"/>
+                  </linearGradient>
+                  <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#7a8469"/>
+                    <stop offset="1" stop-color="#4f6154"/>
+                  </linearGradient>
+                  <filter id="paper-grain">
+                    <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+                    <feColorMatrix type="saturate" values="0"/>
+                  </filter>
+                </defs>
 
-          <aside class="about-facts reveal" style="--d:.12s" aria-label="浜名湖うなぎの基本情報">
-            <p class="facts-title">KEY&nbsp;FACTS</p>
-            <dl class="fact">
-              <dt><span>汽水湖</span><small>BRACKISH&nbsp;LAKE</small></dt>
-              <dd>海水と淡水が交わる、豊かな生態系</dd>
+                <rect width="600" height="750" fill="url(#sky)"/>
+                <circle cx="412" cy="176" r="74" fill="#c08a3e" opacity=".9"/>
+                <circle cx="412" cy="176" r="92" fill="none" stroke="#c08a3e" stroke-opacity=".35"/>
+
+                <g fill="#8a9279" opacity=".8">
+                  <path d="M0,338 C60,314 98,320 142,342 C186,364 216,340 262,330 C308,320 340,338 376,348 C420,360 450,344 492,332 C530,322 566,330 600,342 L600,430 L0,430 Z"/>
+                </g>
+                <g fill="url(#hill)" opacity=".9">
+                  <path d="M0,392 C62,366 120,374 174,396 C228,418 254,398 302,388 C356,377 394,398 438,410 C488,424 540,402 600,390 L600,462 L0,462 Z"/>
+                </g>
+
+                <rect y="430" width="600" height="320" fill="url(#water)"/>
+                <g stroke="#d9b477" opacity=".55">
+                  <path d="M74,470 H188" stroke-width="2"/>
+                  <path d="M226,472 H314" stroke-width="1"/>
+                  <path d="M360,468 H448" stroke-width="2"/>
+                  <path d="M474,474 H540" stroke-width="1"/>
+                  <path d="M118,494 H244" stroke-width="1"/>
+                  <path d="M300,498 H406" stroke-width="2"/>
+                  <path d="M440,492 H516" stroke-width="1"/>
+                  <path d="M62,522 H150" stroke-width="1"/>
+                  <path d="M230,528 H330" stroke-width="1"/>
+                  <path d="M378,522 H496" stroke-width="2"/>
+                  <path d="M150,560 H268" stroke-width="1"/>
+                  <path d="M330,566 H470" stroke-width="1"/>
+                </g>
+
+                <g transform="translate(0,-4)">
+                  <path d="M176 614 C210 646 262 636 284 600 C306 564 292 530 322 508 C344 492 370 494 390 512"
+                        fill="none" stroke="#071a1e" stroke-width="30" stroke-linecap="round" opacity=".85"/>
+                  <path d="M184 598 C216 624 254 616 274 586 C294 555 284 526 312 506 C334 491 356 491 376 504"
+                        fill="none" stroke="#d9b477" stroke-width="1.6" stroke-linecap="round" opacity=".45"/>
+                  <path d="M387 508 C404 496 420 496 432 505 C418 514 410 527 406 542 C395 531 390 519 387 508 Z" fill="#071a1e" opacity=".85"/>
+                  <circle cx="188" cy="605" r="4" fill="#f3e9d5"/>
+                  <circle cx="188" cy="605" r="1.8" fill="#071a1e"/>
+                </g>
+
+                <g fill="none" stroke="#a9b596" stroke-width="2" stroke-linecap="round" opacity=".9">
+                  <path d="M84 750 C70 660 62 590 78 534"/>
+                  <path d="M104 750 C96 666 92 604 110 552"/>
+                  <path d="M126 750 C124 680 132 624 152 584"/>
+                  <path d="M70 660 C80 650 92 648 102 654"/>
+                  <path d="M68 622 C78 612 90 610 100 616"/>
+                  <path d="M88 686 C98 676 110 676 120 682"/>
+                </g>
+
+                <g fill="none" stroke="#33494b" stroke-width="2" stroke-linecap="round" opacity=".55">
+                  <path d="M300 292 C306 286 312 286 318 292"/>
+                  <path d="M332 276 C337 271 342 271 347 276"/>
+                  <path d="M286 266 C290 262 294 262 298 266"/>
+                </g>
+
+                <rect width="600" height="750" filter="url(#paper-grain)" opacity=".06"/>
+              </svg>
+            </div>
+            <figcaption class="art-caption">
+              <span class="art-caption-jp">汽水湖、浜名湖。</span>
+              <span class="art-caption-en">BRACKISH WATER, BRACKISH LIGHT</span>
+            </figcaption>
+          </figure>
+
+          <div class="about-text" data-reveal style="--delay:.1s">
+            <p class="about-intro">浜名湖は、遠州灘とつながる日本有数の汽水湖です。海からはミネラルを含む海水が、山からは豊かな淡水が流れ込み、湖内には多様な生きものが暮らしています。</p>
+            <p>浜名湖でのうなぎ養殖は、明治24年（1891年）ごろ、現在の湖西市にあたる一帯で始まったとされています。以来130年余り、養鰻の技術と、蒲焼きの文化が受け継がれてきました。</p>
+            <p>浜名湖周辺で育てられたうなぎは「浜名湖うなぎ」と呼ばれ、静岡を代表する味として親しまれています。そのおいしさの背景にあるのは、湖の環境と、そこに暮らす人々の手仕事です。</p>
+
+            <dl class="stats">
+              <div class="stat">
+                <dt>湖の面積</dt>
+                <dd><em>約</em>65<span>km²</span></dd>
+              </div>
+              <div class="stat">
+                <dt>湖の周囲</dt>
+                <dd><em>約</em>114<span>km</span></dd>
+              </div>
+              <div class="stat">
+                <dt>最大水深</dt>
+                <dd>16.6<span>m</span></dd>
+              </div>
             </dl>
-            <dl class="fact">
-              <dt><span>1879</span><small>MEIJI&nbsp;12</small></dt>
-              <dd>浜名湖でうなぎ養殖が始まった年</dd>
-            </dl>
-            <dl class="fact">
-              <dt><span>約2年</span><small>GROWING&nbsp;TIME</small></dt>
-              <dd>稚魚から出荷まで、丁寧に育てる時間</dd>
-            </dl>
-            <dl class="fact">
-              <dt><span>職人の手</span><small>CRAFT</small></dt>
-              <dd>寝かせ、捌き、焼きまで一貫した手仕事</dd>
-            </dl>
-            <p class="fact-note">静岡県 浜松市・湖西市</p>
-          </aside>
+            <p class="stats-note">※ 面積・周囲長・水深は静岡県などが公表する値を参照。湖は浜松市と湖西市にまたがっています。</p>
+          </div>
+        </div>
+
+        <blockquote class="pull-quote" data-reveal>
+          <p>海の恵みと、山の恵み。<br>ふたつの水が出会う湖だから、<br>うなぎはおいしく育つ。</p>
+          <cite>浜名湖という土地の記憶</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section section--ink" id="why">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="section-meta">
+            <span class="section-num">02</span>
+            <span class="section-label">WHY DELICIOUS</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title">おいしさには、<br>理由がある。</h2>
+            <p class="section-lead">水、気候、餌、そして人の手。浜名湖うなぎの味は、いくつもの要素が重なり合って生まれます。</p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <div class="feature-top">
+              <span class="feature-num">01</span>
+              <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M3 20c5-5 9-5 14 0s9 5 14 0 9-5 14 0"/>
+                <path d="M3 29c5-5 9-5 14 0s9 5 14 0 9-5 14 0"/>
+                <path d="M3 38c5-5 9-5 14 0s9 5 14 0 9-5 14 0"/>
+              </svg>
+            </div>
+            <h3>汽水湖の、豊かな水</h3>
+            <p>海水と淡水が混ざり合う浜名湖は、プランクトンや小魚が育つ豊かな環境。湖のミネラルが、うなぎの身にやわらかさと深い旨みを与えます。</p>
+          </article>
+
+          <article class="feature-card" data-reveal style="--delay:.08s">
+            <div class="feature-top">
+              <span class="feature-num">02</span>
+              <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="11"/>
+                <path d="M24 2v5M24 41v5M2 24h5M41 24h5M8.5 8.5l3.5 3.5M36 36l3.5 3.5M39.5 8.5L36 12M12 36l-3.5 3.5"/>
+              </svg>
+            </div>
+            <h3>温暖な、浜松の気候</h3>
+            <p>一年を通して穏やかな浜松の気候は、うなぎが無理なく育つ環境。水温の変化がゆるやかで、じっくりと身を大きくすることができます。</p>
+          </article>
+
+          <article class="feature-card" data-reveal style="--delay:.16s">
+            <div class="feature-top">
+              <span class="feature-num">03</span>
+              <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 4c7 9 12 15.5 12 22a12 12 0 1 1-24 0C12 19.5 17 13 24 4Z"/>
+                <path d="M19 30a5 5 0 0 0 5 5"/>
+              </svg>
+            </div>
+            <h3>水と餌への、こだわり</h3>
+            <p>きれいな地下水を引き入れ、その日の水温やうなぎの状態を見ながら給餌。手間を惜しまない養鰻が、味の差をつくります。</p>
+          </article>
+
+          <article class="feature-card" data-reveal style="--delay:.24s">
+            <div class="feature-top">
+              <span class="feature-num">04</span>
+              <svg class="feature-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 44c7 0 12-4.5 12-11 0-8-12-27-12-27S12 25 12 33c0 6.5 5 11 12 11Z"/>
+                <path d="M24 39c3.5 0 6-2.2 6-5.5 0-4-6-13.5-6-13.5s-6 9.5-6 13.5c0 3.3 2.5 5.5 6 5.5Z"/>
+              </svg>
+            </div>
+            <h3>受け継がれる、職人の技</h3>
+            <p>裂き、白焼きにし、蒸して、タレを付けて焼く。蒲焼きの一連の工程を、職人が一本ずつ丁寧に仕上げていきます。</p>
+          </article>
+        </div>
+
+        <div class="why-note" data-reveal>
+          <p class="why-note-en">CRAFT, WATER, AND TIME.</p>
+          <p class="why-note-jp">うなぎは、手をかけた分だけ応えてくれる。<br>浜名湖の養鰻は、いまも人の目と手で支えられています。</p>
         </div>
       </div>
     </section>
 
-    <!-- ============ QUOTE BAND ============ -->
-    <section class="quote-band" aria-label="浜名湖うなぎの言葉">
-      <div class="quote-band-inner">
-        <p class="reveal">うなぎは、湖がつくる。</p>
-        <span class="reveal" style="--d:.08s">HAMANAKO,&nbsp;SHIZUOKA</span>
-      </div>
-    </section>
-
-    <!-- ============ HISTORY ============ -->
-    <section class="section history" id="history">
+    <!-- History -->
+    <section class="section section--paper" id="history">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow reveal"><span class="num">02</span>HISTORY</p>
-          <h2 class="reveal" style="--d:.05s">一世紀半、<br>湖とともに。</h2>
-          <p class="section-lead reveal" style="--d:.1s">
-            養殖が始まった明治から、蒲焼きが旅の楽しみとなった昭和、そして次の百年へ。
-            浜名湖うなぎの歩みをたどります。
-          </p>
+        <div class="section-head" data-reveal>
+          <div class="section-meta">
+            <span class="section-num">03</span>
+            <span class="section-label">HISTORY</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title">浜名湖と、<br>うなぎの歩み。</h2>
+            <p class="section-lead">明治のころに始まった養鰻は、湖の暮らしとともに育ち、やがて浜松・浜名湖を代表する食文化になりました。</p>
+          </div>
         </div>
 
         <ol class="timeline">
-          <li class="timeline-item reveal">
-            <div class="timeline-year">1879<small>明治12年</small></div>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-year"><span>1891</span><small>明治24年</small></div>
             <div class="timeline-body">
-              <h3>養殖のはじまり</h3>
-              <p>舞阪の漁師たちが、天然のうなぎを池で育てる。浜名湖が養鰻の地となる、第一歩でした。</p>
+              <h3>養鰻のはじまり</h3>
+              <p>現在の湖西市にあたる浜名湖周辺で、うなぎの養殖が始まったとされています。温暖な気候と豊富な水が、養鰻に適していました。</p>
             </div>
           </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-year">1900s<small>明治後期</small></div>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-year"><span>1900</span><small>明治30年代</small></div>
             <div class="timeline-body">
-              <h3>養鰻場の広がり</h3>
-              <p>湖岸に養鰻場が増え、浜名湖のうなぎが各地へ。湖と人々の暮らしが、より深く結びついていきます。</p>
+              <h3>産地への礎</h3>
+              <p>舞阪や浜名湖沿岸にも養鰻池が広がり、試行錯誤の末に飼育技術が磨かれていきます。浜名湖は、日本有数のうなぎ産地へと歩み始めました。</p>
             </div>
           </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-year">1955—<small>昭和30年代</small></div>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-year"><span>1930s</span><small>昭和初期</small></div>
             <div class="timeline-body">
-              <h3>蒲焼き文化の定着</h3>
-              <p>観光地として賑わいを見せる浜松・弁天島。旅の楽しみとして、浜名湖うなぎの蒲焼きが広く親しまれました。</p>
+              <h3>技術の改良</h3>
+              <p>給餌や水質管理の方法が改良され、安定した生産が可能に。養鰻は、地域を支える産業として根付いていきました。</p>
             </div>
           </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-year">1990s—<small>平成</small></div>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-year"><span>1960s</span><small>昭和30〜40年代</small></div>
             <div class="timeline-body">
-              <h3>ブランドへ</h3>
-              <p>生産者・料理人・販売店が連携し、「浜名湖うなぎ」の名が全国へ。品質と食文化を守る取り組みが進みます。</p>
+              <h3>蒲焼き文化の広がり</h3>
+              <p>高度経済成長とともに、うなぎの蒲焼きが食卓や贈り物として広がります。浜松・浜名湖のうなぎは、多くの人に知られる味になりました。</p>
             </div>
           </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-year">NOW<small>現在</small></div>
+          <li class="timeline-item" data-reveal>
+            <div class="timeline-year"><span>NOW</span><small>現在</small></div>
             <div class="timeline-body">
-              <h3>次の百年へ</h3>
-              <p>稚魚の資源管理や環境に配慮した養殖など、持続可能なうなぎ文化へ向けた挑戦が続いています。</p>
+              <h3>次の世代へ</h3>
+              <p>汽水湖の環境を守りながら、養鰻と蒲焼きの文化を次世代へ。資源保護や完全養殖の研究も進み、浜名湖うなぎの歴史は続いています。</p>
             </div>
           </li>
         </ol>
-        <p class="history-note reveal">※ 年代は浜名湖における養鰻の歩みを伝える一般的な説に基づくものです。</p>
+        <p class="source-note" data-reveal>※ 歴史の年表は公開情報をもとにした概要です。起源や年代には諸説あります。</p>
       </div>
     </section>
 
-    <!-- ============ CRAFT ============ -->
-    <section class="section craft" id="craft">
+    <!-- Life -->
+    <section class="section section--sand" id="life">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow reveal"><span class="num">03</span>CRAFT</p>
-          <h2 class="reveal" style="--d:.05s">うなぎが、<br>食卓に届くまで。</h2>
-          <p class="section-lead reveal" style="--d:.1s">
-            稚魚を迎える冬から、炭火の上で焼き上がるまで。ひとつの蒲焼きには、長い時間と手仕事が重なっています。
-          </p>
+        <div class="section-head" data-reveal>
+          <div class="section-meta">
+            <span class="section-num">04</span>
+            <span class="section-label">LIFE CYCLE</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title">うなぎの一生を、<br>知る。</h2>
+            <p class="section-lead">うなぎは、海で生まれ、川や湖で育ち、ふたたび海へ還ります。その旅路には、いまも解き明かされていない謎が残っています。</p>
+          </div>
         </div>
 
-        <div class="craft-grid">
-          <article class="craft-step reveal">
-            <span class="step-num" aria-hidden="true">01</span>
-            <h3>稚魚</h3>
-            <p>冬の浜名湖に、透明なシラスウナギがやってくる。繊細な命を、そっと育てることからすべては始まります。</p>
-          </article>
-          <article class="craft-step reveal" style="--d:.05s">
-            <span class="step-num" aria-hidden="true">02</span>
-            <h3>養殖</h3>
-            <p>水質と水温を丁寧に管理しながら、およそ2年をかけて大きく育てます。湖の恵みが、身に蓄えられていきます。</p>
-          </article>
-          <article class="craft-step reveal" style="--d:.1s">
-            <span class="step-num" aria-hidden="true">03</span>
-            <h3>寝かせ</h3>
-            <p>出荷前にいったん絶食させ、余分な脂を落とし、身を引き締めます。このひと手間が、味の輪郭をつくります。</p>
-          </article>
-          <article class="craft-step reveal" style="--d:.15s">
-            <span class="step-num" aria-hidden="true">04</span>
-            <h3>捌き</h3>
-            <p>背開きでふっくらと。包丁一本で、身を傷つけずに開いていく。長年かけて磨かれた、静かな技です。</p>
-          </article>
-          <article class="craft-step reveal" style="--d:.2s">
-            <span class="step-num" aria-hidden="true">05</span>
-            <h3>白焼き</h3>
-            <p>皮目から炭火でじっくり。余分な脂を落とし、香ばしさを引き出します。ここで焼きの土台が決まります。</p>
-          </article>
-          <article class="craft-step reveal" style="--d:.25s">
-            <span class="step-num" aria-hidden="true">06</span>
-            <h3>蒸し・焼き</h3>
-            <p>蒸してふっくらとさせ、秘伝のタレをまとわせて、もう一度焼き上げる。香りと艶が、最後の仕上げです。</p>
-          </article>
+        <div class="life-track">
+          <div class="life-step" data-reveal>
+            <div class="life-icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="17"/>
+                <circle cx="27" cy="27" r="2.4" fill="currentColor" stroke="none"/>
+                <circle cx="37" cy="27" r="2.4" fill="currentColor" stroke="none"/>
+                <circle cx="27" cy="37" r="2.4" fill="currentColor" stroke="none"/>
+                <circle cx="37" cy="37" r="2.4" fill="currentColor" stroke="none"/>
+                <circle cx="32" cy="32" r="2.4" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <span class="life-num">01</span>
+            <h3>卵</h3>
+            <p class="life-en">EGG</p>
+            <p>マリアナ海溝付近の海で産卵すると考えられています。直径1ミリほどの、小さな命です。</p>
+          </div>
+
+          <div class="life-step" data-reveal style="--delay:.06s">
+            <div class="life-icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 12 C45 18 50 30 45 42 C40 51 26 53 19 45 C11 36 15 21 32 12 Z"/>
+                <path d="M26 24 C33 28 36 34 35 42"/>
+              </svg>
+            </div>
+            <span class="life-num">02</span>
+            <h3>レプトケファルス</h3>
+            <p class="life-en">LEPTOCEPHALUS</p>
+            <p>葉のような形の幼生。黒潮に乗って、長い時間をかけて日本の沿岸へと旅します。</p>
+          </div>
+
+          <div class="life-step" data-reveal style="--delay:.12s">
+            <div class="life-icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M12 36 C20 30 27 32 32 36 C37 40 44 42 52 36"/>
+                <path d="M12 45 C20 39 27 41 32 45 C37 49 44 51 52 45"/>
+                <circle cx="17" cy="34" r="1.6" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <span class="life-num">03</span>
+            <h3>シラスウナギ</h3>
+            <p class="life-en">GLASS EEL</p>
+            <p>透明な体の稚魚。河口にたどり着き、川や湖へとのぼっていきます。養鰻では、この稚魚を育みます。</p>
+          </div>
+
+          <div class="life-step" data-reveal style="--delay:.18s">
+            <div class="life-icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M11 39 C19 30 27 34 32 39 C37 44 45 46 53 38"/>
+                <path d="M13 47 C21 38 29 42 34 47 C39 52 47 54 55 46" opacity=".45"/>
+                <circle cx="16" cy="37" r="1.8" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <span class="life-num">04</span>
+            <h3>黄うなぎ</h3>
+            <p class="life-en">YELLOW EEL</p>
+            <p>湖や池で数年かけて成長。黄色みを帯びた体で、夜になると小魚や甲殻類を求めて動き回ります。</p>
+          </div>
+
+          <div class="life-step" data-reveal style="--delay:.24s">
+            <div class="life-icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M10 38 C19 28 28 33 33 39 C38 45 46 47 55 37"/>
+                <path d="M12 47 C21 37 30 42 35 48 C40 54 48 56 57 46" opacity=".45"/>
+                <circle cx="15" cy="35" r="1.8" fill="currentColor" stroke="none"/>
+                <path d="M49 31 C53 29 56 30 58 33" opacity=".6"/>
+              </svg>
+            </div>
+            <span class="life-num">05</span>
+            <h3>銀うなぎ</h3>
+            <p class="life-en">SILVER EEL</p>
+            <p>成熟すると体は銀色に。海へ戻り、産卵の旅に出ます。その一生の多くは、まだ謎に包まれています。</p>
+          </div>
         </div>
 
-        <div class="craft-note reveal">
-          <p><span>関東風</span>背開きにして蒸し、焼き上げる。浜名湖周辺で広く親しまれる、ふっくらとした蒲焼きのスタイルです。</p>
+        <div class="life-note" data-reveal>
+          <span class="life-note-label">NOTE</span>
+          <p>現在の浜名湖の養鰻は、天然のシラスウナギを採捕して育てる方法が主流です。うなぎ資源を持続的に守るため、稚魚の安定供給や完全養殖の研究が進められています。</p>
         </div>
       </div>
     </section>
 
-    <!-- ============ TASTE ============ -->
-    <section class="section taste" id="taste">
+    <!-- Taste -->
+    <section class="section section--paper" id="taste">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow reveal"><span class="num">04</span>TASTE</p>
-          <h2 class="reveal" style="--d:.05s">浜名湖うなぎの、<br>味わい方。</h2>
+        <div class="section-head" data-reveal>
+          <div class="section-meta">
+            <span class="section-num">05</span>
+            <span class="section-label">TASTE</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title">浜名湖うなぎの、<br>味わい方。</h2>
+            <p class="section-lead">香ばしい皮と、ふっくらとした身。浜名湖の蒲焼きは、関東風の「蒸し」を加えた、やわらかな仕上がりが特徴です。</p>
+          </div>
         </div>
 
-        <div class="taste-grid">
-          <article class="taste-card reveal">
-            <span class="taste-kanji" aria-hidden="true">蒲</span>
-            <div class="taste-content">
-              <p class="taste-en">KABAYAKI</p>
-              <h3>蒲焼き</h3>
-              <p>香ばしい皮と、ふっくらとした身。山椒をひとふり、熱々のうちに。浜名湖うなぎの主役です。</p>
+        <div class="taste-panel" data-reveal>
+          <div class="taste-panel-head">
+            <p class="taste-panel-en">THE FOUR STEPS</p>
+            <h3>蒲焼きができるまで</h3>
+            <p>静岡は関東風と関西風が交わる地域。浜松では、背開きにして白焼きし、蒸してからタレ焼きにする関東風の蒲焼きが親しまれています。</p>
+          </div>
+
+          <ol class="process-list">
+            <li class="process-step">
+              <span class="process-num">01</span>
+              <svg class="process-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M8 40 28 20l6 6L14 46 8 40Z"/>
+                <path d="M30 12 36 18M33 15l7-7 4 4-7 7"/>
+                <path d="M25 23l6 6"/>
+              </svg>
+              <h4>裂く</h4>
+              <p>背開きにして、身を傷めないように包丁を入れる。下ごしらえが、仕上がりを左右します。</p>
+            </li>
+            <li class="process-step">
+              <span class="process-num">02</span>
+              <svg class="process-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 43c8 0 14-5.2 14-12.8 0-7.4-5.4-13-8.5-19.2-1 4.4-3.8 7.2-6.9 9.1.7-5-1.4-9.6-4.3-13.6-1.1 8.4-8.3 13.4-8.3 22.2C10 37.8 16 43 24 43Z"/>
+                <path d="M24 37.5c3.8 0 6.5-2.7 6.5-6.4 0-3.6-2.4-6.5-4.4-9.4-1.1 3.2-5.1 6.1-5.1 9.9 0 3.5 1.4 5.9 3 5.9Z"/>
+              </svg>
+              <h4>白焼き</h4>
+              <p>炭火で皮目から焼き、余分な脂を落とす。ここで香ばしさと、身の旨みを閉じ込めます。</p>
+            </li>
+            <li class="process-step">
+              <span class="process-num">03</span>
+              <svg class="process-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M14 20c4-4 4-8 0-12M24 20c4-4 4-8 0-12M34 20c4-4 4-8 0-12"/>
+                <path d="M10 26h28v6c0 6-5 10-11 10h-6c-6 0-11-4-11-10v-6Z"/>
+                <path d="M10 31H6M38 31h4"/>
+              </svg>
+              <h4>蒸す</h4>
+              <p>数分間蒸すことで、身はふっくらとやわらかに。関東風の蒲焼きならではの食感が生まれます。</p>
+            </li>
+            <li class="process-step">
+              <span class="process-num">04</span>
+              <svg class="process-icon" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M18 20h12v20a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V20Z"/>
+                <path d="M21 20v-7h6v7"/>
+                <path d="M24 29c3.2 4 5 6.4 5 9.2a5 5 0 0 1-10 0c0-2.8 1.8-5.2 5-9.2Z"/>
+              </svg>
+              <h4>タレ焼き</h4>
+              <p>醤油・みりん・砂糖のタレを付け、香ばしく焼き上げる。焦がさず、艶やかに仕上げるのが職人の技です。</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="ways">
+          <article class="way-card" data-reveal>
+            <span class="way-char" aria-hidden="true">重</span>
+            <div class="way-content">
+              <p class="way-en">UNAJU</p>
+              <h3>うな重</h3>
+              <p>タレがしみたご飯の上に、香ばしい蒲焼きを。山椒をひとふり添えれば、香りがふっと立ちのぼります。</p>
             </div>
           </article>
-          <article class="taste-card reveal" style="--d:.06s">
-            <span class="taste-kanji" aria-hidden="true">白</span>
-            <div class="taste-content">
-              <p class="taste-en">SHIRAYAKI</p>
+          <article class="way-card" data-reveal style="--delay:.08s">
+            <span class="way-char" aria-hidden="true">白</span>
+            <div class="way-content">
+              <p class="way-en">SHIRAYAKI</p>
               <h3>白焼き</h3>
-              <p>タレを使わず、素材そのものの味を。わさび醤油や塩で、静かに味わう贅沢です。</p>
+              <p>タレを付けずに焼き上げ、わさびや塩で味わう。うなぎそのものの旨みと、ふくよかな香りを楽しめます。</p>
             </div>
           </article>
-          <article class="taste-card reveal" style="--d:.12s">
-            <span class="taste-kanji" aria-hidden="true">飯</span>
-            <div class="taste-content">
-              <p class="taste-en">UNAGI&nbsp;MESHI</p>
-              <h3>うなぎ飯</h3>
-              <p>炊きたてのご飯に蒲焼きをのせ、タレをまわしかけて。浜名湖の食卓の、変わらない定番です。</p>
-            </div>
-          </article>
-          <article class="taste-card reveal" style="--d:.18s">
-            <span class="taste-kanji" aria-hidden="true">肝</span>
-            <div class="taste-content">
-              <p class="taste-en">KIMOSUI&nbsp;/&nbsp;UZAKU</p>
-              <h3>肝吸い・うざく</h3>
-              <p>肝のほろ苦さと出汁の香り、きゅうりと酢の物。食卓を整える、小さな名脇役です。</p>
+          <article class="way-card" data-reveal style="--delay:.16s">
+            <span class="way-char" aria-hidden="true">和</span>
+            <div class="way-content">
+              <p class="way-en">UZAKU</p>
+              <h3>うざく</h3>
+              <p>蒲焼きときゅうりを酢で和えた、さっぱりとした一品。箸休めにも、お酒のお供にもよく合います。</p>
             </div>
           </article>
         </div>
 
-        <div class="taste-note reveal">
-          <p>
-            <span class="note-mark">※</span>
-            うなぎは通年楽しめますが、脂がのるのは初夏から秋にかけて。土用の丑の日は、夏の風物詩として特に賑わいます。
-          </p>
+        <div class="taste-quote" data-reveal>
+          <p>「焼きすぎず、蒸しすぎず。<br>うなぎの声を聴くように、火を入れる。」</p>
+          <span>浜名湖の蒲焼き職人の言葉から</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ AREA ============ -->
-    <section class="section area" id="area">
+    <!-- Area -->
+    <section class="section section--ink" id="area">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow reveal"><span class="num">05</span>AREA</p>
-          <h2 class="reveal" style="--d:.05s">うなぎの香りを、<br>たどる旅。</h2>
-          <p class="section-lead reveal" style="--d:.1s">
-            湖の風景、湯のぬくもり、夕暮れの鳥居。浜名湖は、うなぎを味わう前後にも、たくさんの時間をくれます。
-          </p>
+        <div class="section-head" data-reveal>
+          <div class="section-meta">
+            <span class="section-num">06</span>
+            <span class="section-label">LAKE HAMANA</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title">浜名湖という、<br>旅先。</h2>
+            <p class="section-lead">うなぎを味わったあとは、湖のほとりをゆっくり歩く。温泉、夕景、城下町。浜名湖は、一日では足りないほど豊かな場所です。</p>
+          </div>
         </div>
 
         <div class="area-grid">
-          <article class="area-card reveal">
-            <div class="area-visual area-visual--benten" aria-hidden="true">
-              <span class="area-sun"></span>
-              <span class="area-torii"></span>
-              <span class="area-water"></span>
-              <span class="area-label">BENTENJIMA</span>
-            </div>
-            <div class="area-body">
-              <p class="area-en">01&nbsp;/&nbsp;BENTENJIMA</p>
-              <h3>弁天島</h3>
-              <p>湖の中央に浮かぶ小さな島。夕暮れの海に立つ赤い鳥居と、遠州灘に沈む夕日が美しい場所です。</p>
-            </div>
-          </article>
+          <div class="map-wrap" data-reveal>
+            <svg class="lake-map" viewBox="0 0 600 560" role="img" aria-label="浜名湖周辺のイメージマップ。舘山寺温泉、弁天島、浜松城、養鰻池などの位置を示しています。">
+              <defs>
+                <linearGradient id="map-water" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#2f5a5c"/>
+                  <stop offset="1" stop-color="#17353b"/>
+                </linearGradient>
+                <pattern id="map-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M40 0H0V40" fill="none" stroke="#d9b477" stroke-opacity=".08"/>
+                </pattern>
+              </defs>
 
-          <article class="area-card reveal" style="--d:.08s">
-            <div class="area-visual area-visual--kanzanji" aria-hidden="true">
-              <span class="area-hill"></span>
-              <span class="area-roof"></span>
-              <span class="area-steam"></span>
-              <span class="area-label">KANZANJI</span>
-            </div>
-            <div class="area-body">
-              <p class="area-en">02&nbsp;/&nbsp;KANZANJI&nbsp;ONSEN</p>
-              <h3>館山寺温泉</h3>
-              <p>湖を見下ろす高台の温泉街。うなぎの香りが漂う街道沿いには、老舗の店が軒を連ねています。</p>
-            </div>
-          </article>
+              <rect width="600" height="560" fill="#0d2228"/>
+              <rect width="600" height="560" fill="url(#map-grid)"/>
 
-          <article class="area-card reveal" style="--d:.16s">
-            <div class="area-visual area-visual--inlet" aria-hidden="true">
-              <span class="area-bridge"></span>
-              <span class="area-ripple"></span>
-              <span class="area-label">IMAGIRI</span>
-            </div>
-            <div class="area-body">
-              <p class="area-en">03&nbsp;/&nbsp;IMAGIRI&nbsp;INLET</p>
-              <h3>今切口</h3>
-              <p>浜名湖と太平洋をつなぐ水路。潮の流れが生む汽水の恵みを、間近に感じられる場所です。</p>
-            </div>
-          </article>
-        </div>
+              <g fill="#d9b477" opacity=".22">
+                <path d="M40 80h120v1H40zM470 120h90v1h-90zM70 450h80v1H70zM500 430h60v1h-60z"/>
+              </g>
 
-        <div class="access reveal">
-          <div class="access-head">
-            <p class="eyebrow"><span class="num">ACCESS</span></p>
-            <h3>浜名湖への行き方</h3>
+              <!-- Lake -->
+              <path d="M168 248
+                       C148 214 168 186 204 184
+                       C230 182 242 202 266 208
+                       C300 216 312 188 346 186
+                       C386 183 402 210 432 216
+                       C462 222 474 246 458 270
+                       C442 294 412 296 402 318
+                       C392 342 362 344 346 324
+                       C330 304 314 300 294 314
+                       C268 332 248 348 222 340
+                       C198 333 194 306 178 292
+                       C158 274 148 268 168 248 Z"
+                    fill="url(#map-water)" stroke="#d9b477" stroke-opacity=".55" stroke-width="1.2"/>
+
+              <!-- Inlet to the sea -->
+              <path d="M326 336 C330 372 336 400 344 436 L372 436 C362 400 356 372 354 334 Z"
+                    fill="url(#map-water)" stroke="#d9b477" stroke-opacity=".55" stroke-width="1.2"/>
+              <path d="M0 448 C80 438 150 454 230 448 C310 442 380 458 460 450 C520 444 566 452 600 446 L600 560 L0 560 Z"
+                    fill="#102c33" opacity=".9"/>
+              <g stroke="#d9b477" stroke-opacity=".35" fill="none">
+                <path d="M40 474c20-8 36-8 56 0s36 8 56 0 36-8 56 0 36 8 56 0 36-8 56 0 36 8 56 0 36-8 56 0 36 8 56 0 36-8 56 0"/>
+                <path d="M80 500c20-8 36-8 56 0s36 8 56 0 36-8 56 0 36 8 56 0 36-8 56 0 36 8 56 0 36-8 56 0"/>
+                <path d="M180 528c20-8 36-8 56 0s36 8 56 0 36-8 56 0 36 8 56 0 36-8 56 0"/>
+              </g>
+
+              <!-- Route -->
+              <path d="M318 150 C286 176 266 206 254 236 C244 260 232 284 214 300 C236 340 300 366 342 410"
+                    fill="none" stroke="#c08a3e" stroke-width="1.2" stroke-dasharray="5 7" opacity=".8"/>
+
+              <!-- Markers -->
+              <g class="map-marker">
+                <circle cx="214" cy="298" r="16" fill="none" stroke="#c08a3e" stroke-opacity=".45"/>
+                <circle cx="214" cy="298" r="6" fill="#e0b76c"/>
+                <text x="186" y="330" class="map-label">舘山寺温泉</text>
+              </g>
+              <g class="map-marker">
+                <circle cx="346" cy="414" r="16" fill="none" stroke="#c08a3e" stroke-opacity=".45"/>
+                <circle cx="346" cy="414" r="6" fill="#e0b76c"/>
+                <text x="368" y="408" class="map-label">弁天島</text>
+              </g>
+              <g class="map-marker">
+                <circle cx="320" cy="150" r="16" fill="none" stroke="#c08a3e" stroke-opacity=".45"/>
+                <circle cx="320" cy="150" r="6" fill="#e0b76c"/>
+                <text x="342" y="144" class="map-label">浜松城</text>
+              </g>
+              <g class="map-marker">
+                <circle cx="278" cy="256" r="13" fill="none" stroke="#d9b477" stroke-opacity=".35"/>
+                <circle cx="278" cy="256" r="4.5" fill="#d9b477"/>
+                <text x="292" y="252" class="map-label map-label--small">養鰻池</text>
+              </g>
+
+              <text x="268" y="286" class="map-water-label">浜名湖</text>
+              <text x="398" y="486" class="map-water-label map-water-label--small">遠州灘</text>
+              <text x="332" y="446" class="map-water-label map-water-label--tiny">今切口</text>
+
+              <!-- Compass -->
+              <g transform="translate(524,78)" opacity=".8">
+                <circle r="28" fill="none" stroke="#d9b477" stroke-opacity=".35"/>
+                <path d="M0 -19 5 5 0 1 -5 5Z" fill="#d9b477"/>
+                <text x="0" y="-34" class="map-compass">N</text>
+              </g>
+
+              <text x="34" y="44" class="map-caption-en">LAKE HAMANA / IMAGE MAP</text>
+            </svg>
+            <p class="map-note">※ 位置関係をわかりやすく示したイメージ図です。実際の地形とは異なります。</p>
           </div>
-          <div class="access-grid">
-            <div class="access-item">
-              <span>東京から</span>
-              <p>東海道新幹線で浜松駅まで約1時間30分。浜松駅からバスで弁天島・館山寺方面へ。</p>
+
+          <div class="area-content">
+            <div class="spot-list">
+              <article class="spot" data-reveal>
+                <span class="spot-num">01</span>
+                <div>
+                  <h3>舘山寺温泉</h3>
+                  <p class="spot-en">KANZANJI ONSEN</p>
+                  <p>浜名湖を一望する温泉街。うなぎの昼食のあとに、湖を眺めながらひと風呂いかがですか。</p>
+                </div>
+              </article>
+              <article class="spot" data-reveal style="--delay:.06s">
+                <span class="spot-num">02</span>
+                <div>
+                  <h3>弁天島</h3>
+                  <p class="spot-en">BENTENJIMA</p>
+                  <p>湖と海をつなぐ今切口のそば。夕暮れ時には、湖面が金色に染まる美しい景色が広がります。</p>
+                </div>
+              </article>
+              <article class="spot" data-reveal style="--delay:.12s">
+                <span class="spot-num">03</span>
+                <div>
+                  <h3>浜松城</h3>
+                  <p class="spot-en">HAMAMATSU CASTLE</p>
+                  <p>徳川家康が17年間を過ごした城。浜松の街歩きの起点として、立ち寄ってみたい場所です。</p>
+                </div>
+              </article>
+              <article class="spot" data-reveal style="--delay:.18s">
+                <span class="spot-num">04</span>
+                <div>
+                  <h3>養鰻池のある風景</h3>
+                  <p class="spot-en">EEL PONDS</p>
+                  <p>湖岸に広がる養鰻池。水面に映る空と、静かな作業の気配が、浜名湖うなぎの日常を伝えています。</p>
+                </div>
+              </article>
             </div>
-            <div class="access-item">
-              <span>名古屋から</span>
-              <p>東海道新幹線で浜松駅まで約30分。在来線なら弁天島駅・新居町駅も便利です。</p>
-            </div>
-            <div class="access-item">
-              <span>車で</span>
-              <p>東名高速道路「浜松西IC」または「舘山寺スマートIC」から約15分。</p>
+
+            <div class="course" data-reveal>
+              <p class="course-title">浜名湖うなぎ、一日のモデルコース</p>
+              <ol class="course-list">
+                <li><span class="course-time">10:00</span><span class="course-place">浜名湖岸を散策</span></li>
+                <li><span class="course-time">12:00</span><span class="course-place">うなぎの昼食</span></li>
+                <li><span class="course-time">14:00</span><span class="course-place">舘山寺温泉</span></li>
+                <li><span class="course-time">17:00</span><span class="course-place">弁天島で夕景</span></li>
+              </ol>
             </div>
           </div>
-          <a class="access-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B5%9C%E5%90%8D%E6%B9%96" target="_blank" rel="noopener noreferrer">
-            地図で浜名湖を見る<span aria-hidden="true">↗</span>
-          </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ FAQ ============ -->
-    <section class="section faq" id="faq">
-      <div class="container container--narrow">
-        <div class="section-head">
-          <p class="eyebrow reveal"><span class="num">06</span>FAQ</p>
-          <h2 class="reveal" style="--d:.05s">よくある質問</h2>
+    <!-- FAQ -->
+    <section class="section section--paper" id="faq">
+      <div class="container">
+        <div class="section-head section-head--faq" data-reveal>
+          <div class="section-meta">
+            <span class="section-num">07</span>
+            <span class="section-label">FAQ</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title">よくある質問。</h2>
+            <p class="section-lead">浜名湖うなぎについて、知っておきたいことをまとめました。</p>
+          </div>
         </div>
 
-        <div class="faq-list">
-          <details class="faq-item reveal">
-            <summary><span>旬はいつですか？</span><i aria-hidden="true"></i></summary>
+        <div class="faq-list" data-reveal>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Q</span>
+              <span class="faq-question">なぜ浜名湖でうなぎ養殖が盛んなのですか？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
             <div class="faq-answer">
-              <p>うなぎは通年美味しく食べられますが、脂がのるのは初夏から秋にかけて。土用の丑の日は、夏の風物詩として特に賑わいます。</p>
+              <span class="faq-a">A</span>
+              <p>浜名湖は海水と淡水が混ざる汽水湖で、うなぎが育つための豊かな環境があります。また、温暖な気候と豊富な地下水に恵まれ、明治時代から養鰻が続いてきたことも大きな理由です。</p>
             </div>
           </details>
-          <details class="faq-item reveal">
-            <summary><span>天然と養殖はどう違うのですか？</span><i aria-hidden="true"></i></summary>
-            <div class="faq-answer">
-              <p>天然うなぎは川や湖で自然に育ち、養殖うなぎは管理された環境で育てられます。浜名湖の養殖うなぎは、安定した品質と厚みのある身が特徴です。</p>
-            </div>
-          </details>
-          <details class="faq-item reveal">
-            <summary><span>関東風と関西風、浜名湖はどちらですか？</span><i aria-hidden="true"></i></summary>
-            <div class="faq-answer">
-              <p>浜名湖周辺では、背開きにして一度蒸してから焼く関東風が広く親しまれています。ふっくらとした食感と、香ばしい皮の両方を楽しめます。</p>
-            </div>
-          </details>
-          <details class="faq-item reveal">
-            <summary><span>タレはどんな味ですか？</span><i aria-hidden="true"></i></summary>
-            <div class="faq-answer">
-              <p>醤油、みりん、砂糖を基本に、店ごとに継ぎ足されてきたタレ。甘すぎず、うなぎの脂と香りを引き立てる味わいです。</p>
-            </div>
-          </details>
-          <details class="faq-item reveal">
-            <summary><span>お土産にもできますか？</span><i aria-hidden="true"></i></summary>
-            <div class="faq-answer">
-              <p>蒲焼きの真空パックや、うなぎを使った加工品は通販でも購入できます。冷凍で日持ちするものも多く、贈り物にも喜ばれます。</p>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
 
-    <!-- ============ CLOSING ============ -->
-    <section class="closing">
-      <span class="closing-watermark" aria-hidden="true">浜名湖</span>
-      <div class="closing-inner">
-        <p class="closing-en reveal">LAKE&nbsp;HAMANA,&nbsp;SHIZUOKA</p>
-        <p class="closing-text reveal" style="--d:.06s">湖の恵みを、<br>一枚の蒲焼きに。</p>
-        <div class="closing-actions reveal" style="--d:.12s">
-          <a class="btn btn-gold" href="#top">ページの先頭へ</a>
-          <a class="btn btn-ghost" href="#area">浜名湖へ行く</a>
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Q</span>
+              <span class="faq-question">旬の時期はいつですか？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <span class="faq-a">A</span>
+              <p>養殖のうなぎは一年を通して出回るため、いつでも味わえます。脂がのる秋冬もおいしい季節。土用の丑の日は、特に多くの人でにぎわいます。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Q</span>
+              <span class="faq-question">関東風と関西風の違いは何ですか？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <span class="faq-a">A</span>
+              <p>関東風は背開きにして白焼きしたあと蒸し、タレ焼きにします。関西風は腹開きで、蒸さずに焼き上げるのが一般的。静岡は両者が交わる地域で、浜松では関東風の蒲焼きが親しまれています。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Q</span>
+              <span class="faq-question">浜名湖観光と一緒に楽しめますか？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <span class="faq-a">A</span>
+              <p>はい。舘山寺温泉や弁天島、浜松城など、うなぎとあわせて訪れたい場所がたくさんあります。湖を一周するドライブや、浜名湖の夕景を楽しむのもおすすめです。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">Q</span>
+              <span class="faq-question">自宅でもおいしく食べるには？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <span class="faq-a">A</span>
+              <p>蒲焼きは蒸し器で軽く温めると、ふっくらとした食感が戻ります。フライパンを使う場合は、酒を少量加えて蓋をし、弱火で蒸し焼きにするのがおすすめです。最後にタレをさっと煮からめると香りが立ちます。</p>
+            </div>
+          </details>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <span class="brand-mark" aria-hidden="true">鰻</span>
-        <div>
-          <p class="footer-title">浜名湖うなぎ</p>
-          <p class="footer-sub">HAMANAKO&nbsp;UNAGI</p>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-mark brand-mark--footer" aria-hidden="true">鰻</span>
+          <div>
+            <p class="footer-title">浜名湖うなぎ</p>
+            <p class="footer-title-en">HAMANAKO UNAGI</p>
+          </div>
+        </div>
+        <p class="footer-message">汽水の湖が育てた、<br>百年余りのおいしさ。</p>
+        <a class="footer-link" href="#top">
+          ページの先頭へ
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-main">
+        <div class="footer-col footer-col--about">
+          <p class="footer-col-title">ABOUT THIS SITE</p>
+          <p>浜名湖うなぎの歴史、おいしさの理由、味わい方、そして浜名湖の旅を紹介する情報サイトです。</p>
+          <p class="footer-disclaimer">本サイトは浜名湖うなぎの魅力を紹介するために制作された非公式サイトです。掲載内容は公開情報をもとに構成しており、最新の情報は各自治体・団体の公式情報をご確認ください。</p>
+        </div>
+
+        <nav class="footer-col" aria-label="フッターナビゲーション">
+          <p class="footer-col-title">CONTENTS</p>
+          <ul class="footer-nav">
+            <li><a href="#about">浜名湖うなぎとは</a></li>
+            <li><a href="#why">おいしさの理由</a></li>
+            <li><a href="#history">歴史</a></li>
+            <li><a href="#life">うなぎの一生</a></li>
+            <li><a href="#taste">味わい方</a></li>
+            <li><a href="#area">浜名湖を旅する</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <p class="footer-col-title">REFERENCE</p>
+          <ul class="footer-nav footer-nav--external">
+            <li><a href="https://www.hamanako-eel.jp/about/" target="_blank" rel="noopener noreferrer">浜名湖養魚漁業協同組合</a></li>
+            <li><a href="https://www.pref.shizuoka.jp/" target="_blank" rel="noopener noreferrer">静岡県</a></li>
+            <li><a href="https://www.city.hamamatsu.shizuoka.jp/" target="_blank" rel="noopener noreferrer">浜松市</a></li>
+            <li><a href="https://www.env.go.jp/water/heisa/heisa_net/waters/hamanako.html" target="_blank" rel="noopener noreferrer">環境省 浜名湖</a></li>
+          </ul>
         </div>
       </div>
 
-      <nav class="footer-nav" aria-label="フッターメニュー">
-        <a href="#about">浜名湖と鰻</a>
-        <a href="#history">歴史</a>
-        <a href="#craft">できるまで</a>
-        <a href="#taste">味わい方</a>
-        <a href="#area">浜名湖へ</a>
-        <a href="#faq">よくある質問</a>
-      </nav>
-
-      <div class="footer-note">
-        <p>静岡県浜松市・湖西市に広がる浜名湖の食文化を紹介しています。</p>
-        <p class="footer-disclaimer">本サイトは浜名湖うなぎの魅力を伝える非公式の紹介サイトです。掲載内容は一般的な情報であり、店舗・生産者によって詳細は異なります。</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 浜名湖うなぎ紹介サイト</p>
+        <p class="footer-facts">SHIZUOKA · LAKE HAMANA · JAPAN</p>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© <span id="year">2026</span> 浜名湖うなぎ</p>
-      <p>Made with respect for the lake.</p>
     </div>
   </footer>
 
-  <script src="assets/script.js" defer></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
