@@ -1827,11 +1827,11 @@ button {
 
   .hero-art {
     position: absolute;
-    right: -14%;
+    right: -20%;
     bottom: 2%;
     z-index: 1;
     width: min(76vw, 520px);
-    opacity: 0.28;
+    opacity: 0.16;
     pointer-events: none;
   }
 
