@@ -1599,7 +1599,7 @@ button {
   font-size: clamp(8rem, 27vw, 24rem);
   line-height: 1;
   letter-spacing: 0.08em;
-  color: transparent;
+  color: rgba(200, 162, 92, 0.035);
   -webkit-text-stroke: 1px rgba(200, 162, 92, 0.15);
   white-space: nowrap;
   pointer-events: none;
