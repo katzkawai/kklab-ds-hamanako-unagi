@@ -4,7 +4,7 @@
 
 ## 公開 URL
 
-https://katzkawai.github.io/kklab-ds-hamanako-unagi/
+https://katzkawai.org/kklab-ds-hamanako-unagi/
 
 ## 内容
 
