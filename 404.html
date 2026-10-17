@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ページが見つかりません｜浜名湖うなぎ</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0d1b21">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .error-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100svh;
+      padding: 120px 24px 80px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 30%, rgba(70, 102, 109, 0.28), transparent 48%),
+        var(--ink);
+      color: var(--paper);
+    }
+    .error-page .eyebrow { color: var(--gold); margin-bottom: 18px; }
+    .error-code {
+      font-family: var(--font-serif);
+      font-size: clamp(4.6rem, 16vw, 9rem);
+      line-height: 1;
+      letter-spacing: 0.08em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(200, 162, 92, 0.55);
+    }
+    .error-page h1 {
+      margin-top: 20px;
+      font-family: var(--font-serif);
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+    .error-page p {
+      max-width: 34em;
+      margin-top: 16px;
+      font-size: 0.86rem;
+      line-height: 2;
+      color: rgba(247, 243, 234, 0.62);
+    }
+    .error-page .btn { margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <p class="eyebrow"><span class="num">404</span>NOT FOUND</p>
+    <p class="error-code" aria-hidden="true">404</p>
+    <h1>ページが見つかりません。</h1>
+    <p>お探しのページは、移動または削除された可能性があります。<br>浜名湖うなぎの物語へ、トップページからお戻りください。</p>
+    <a class="btn btn-gold" href="./">トップページへ<span aria-hidden="true">→</span></a>
+  </main>
+</body>
+</html>
